@@ -1,0 +1,157 @@
+body {
+	background-color:#000;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+#container {
+	background-color:#FFF;
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px 20px 20px;
+	overflow:auto;
+}
+
+h2 {
+	color:#f00;
+}
+
+header {
+	padding-top:20px;
+}
+
+header img {
+	height:100px;
+}
+
+nav {
+	width: 100%;
+	float: left;
+	margin: 15px 0px;
+	padding: 0;
+	list-style: none;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+}
+
+nav ul {
+	margin-top:0px;
+}
+
+nav li {
+  	float: left;
+	list-style-type:none;
+}
+
+nav li a {
+  	display: block;
+  	padding: 8px 30px;
+  	text-decoration: none;
+	font-size:18px;
+  	font-weight: bold;
+  	color: #F00;
+	border-right: 1px solid #ccc; 
+	border-bottom:#f2f2f2 solid 4px;
+}
+
+nav li a:hover {
+	color: #FFF;
+	background-color: #000; 
+	border-bottom:#F00 solid 4px;
+}
+
+#intro {
+	width:470px; /* 480 is half -padding */
+	float:left;
+	padding-right:10px;
+}
+
+#gallery{
+	width:470px; /* 480 is half -padding */
+	background:#000;
+	padding:20px 0px;
+	float:right;
+}
+
+#gallery-contain {
+	width:332px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#000;
+}
+
+#gallery-contain img {
+	border:#f00 2px solid;
+	margin:5px;
+}
+
+video {
+	border:solid 4px black;
+	background:#666;
+}
+
+.map-container {
+	background:url(../map/images/templates/map.jpg) no-repeat 0px 0px;
+	height:325px;
+	width:760px;
+	position:relative;
+	color:#fff;
+	float:right;
+	margin:0px 0px 0px 20px;
+}
+
+.map-container a.mark {
+	background:url(../map/images/templates/marker.png) no-repeat 0px 0px;
+	height:26px;
+	width:26px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+}
+
+.map-container .form-continent {
+	position:absolute;
+	top:265px;
+	left:40px;
+}
+
+.detail_container {
+	float:left;
+	width: 171px;
+	height: 260px;
+}
+.city_detail {
+	width: 171px;
+	padding:  0px 10px;
+}
+
+.city_detail .city_photo {
+	float: left;
+	margin: 0px 15px 0px 0px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	box-shadow: 0px 5px 3px #4e5d74;
+	-webkit-box-shadow: 0px 5px 3px #4e5d74;
+	-moz-box-shadow: 0px 5px 3px #4e5d74;
+	-webkit-border-radius: 8px;
+}
+.city_detail .city_info {
+	width: 130px;
+	float: left;
+}
+
+.city_detail_container{
+	display:none;
+}
+
+/* image fade */
+
+#popupCanvas{
+	position:relative;
+	top:26px;
+	left:425px;
+}

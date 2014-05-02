@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WIA-O Week 4</title>
+	<link id="scrollUpTheme" rel="stylesheet" href="css/themes/link.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox.css" media="screen" />
+
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript"  src="js/jquery-1.10.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript" src="js/lib/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+    
+    <!--[if IE]><script src="js/excanvas.js"></script><![endif]-->
+
+	<!-- back to top link -->
+	<script>
+        $(function () {
+          $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '600', // Distance from top before showing element (px)
+            topSpeed: 300, // Speed back to top (ms)
+            animation: 'fade', // Fade, slide, none
+            animationInSpeed: 2000, // Animation in speed (ms)
+            animationOutSpeed: 200, // Animation out speed (ms)
+            scrollText: 'Back to Top', // Text for element
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+          });
+        });
+    </script>
+	
+    <!-- image gallery and lightbox -->
+    <script type="text/javascript">
+		$(document).ready(function(){		
+				$(".fancybox").fancybox();
+			});
+	</script>
+</head>
+
+<body>
+<div id="container">
+	<header>
+    	<img src="images/logo.png">
+        <nav>
+        	<ul>
+            	<li><a href="#">Home</a></li>
+                <li><a href="#gallery">Art</a></li>
+                <li><a href="#anchor">Fighting Technique</a></li>
+                <li><a href="#territory">Territory</a></li>
+            </ul>
+        </nav>
+        <canvas id="popupCanvas" width="150" height="95">Your browser does not support canvas.</canvas>
+    </header>
+	<article id="intro">
+    <h1>Almost gone...</h1>
+    <p>But not in a really cool puff of smoke ninja disappearing act kind of way. In this fast paced world of bullet trains, cell phones, the internet and air travel the passage of time is accelerated.  While we enjoy the modern conveniences afforded us by advanced technology not everyone is benefiting.  Long ago in an age when chivalry, honor and courage reigned an elite group of warriors thrived.  They are, the Ninja.  The ninja class has little to do with Hollywoods mythical depictions of masked assassins wearing all black sneaking through the night.  These were and still are a class of warrior known for their stealth, and dedication.</p>
+    <p>Most of the world is complacent in believing that the ninja went the way of the horse drawn carriage or tall ships of the ancient age.  But this is not so.  Their numbers are dwindling and without immidiate action by people like you they will vanish from the earth and their culture, art and combat techniques will go with them.  The time to act is now, this brave class of men has protected the human race for centuries and now they need you to help them.</p>
+    <h2>Scroll Down To Learn More</h2>
+    </article>
+
+    <div id="gallery">
+    	<div id="gallery-contain">
+        <h2>Ninjas In Art</h2>
+            <a class= "fancybox" rel="group1" href="images/Hanzo.jpg" title="A portrait of Hanzō Hattori from the 17th century">
+                <img src="images/Hanzo-sm.jpg" alt="Image 1" width="150" height="150">
+            </a>
+            
+            <a class="fancybox" rel="group1" href="images/Hokusai_sketches.jpg"  title="Page from volume 6 of the 15-volume Hokusai Manga (sketches collection) Date	1814-1878">
+                <img src="images/Hokusai_sketches-sm.jpg" alt="Image 2" width="150" height="150">
+            </a>
+            <br>
+            <a class="fancybox" rel="group1" href="images/Jiraiya-kuniyoshi.jpg"  title="Ogata Shuma (later Jiraiya) raising his sword to kill a python attacking a large toad, Jiraiya is portrayed as being a ninja.">
+                <img src="images/Jiraiya-kuniyoshi-sm.jpg" alt="Image 3" width="150" height="150">
+            </a>
+            <a class="fancybox" rel="group1" href="images/Suikoden_12.jpg"  title="(Utagawa Kuniyoshi, 1798 - 1861) Ogata Shuma Hiroyuki later known as Jiraiya,<br> with a heavy gun, overcoming a huge Snake which has preyed on his friends the Toads.">
+                <img src="images/Suikoden_12-sm.jpg" alt="Image 4" width="150" height="150">
+            </a>
+        </div>
+    </div>
+    
+    <div id="threats">
+				<canvas id="Canvas1" width="960" height="50">Your browser does not support canvas.</canvas>		
+                <div id="anchor"></div>
+	<h1>Fighting Technique</h1>	
+	<video width="470" height="353" controls>
+		<source src="vid/preview1.mp4" type="video/mp4">
+      	<source src="vid/preview1.ogg" type="video/ogg">
+      	<source src="vid/preview1.webm" type="video/webm">
+    	Your browser does not support the video tag.
+	</video>
+	
+    <video width="470" height="353" controls>
+            <source src="vid/preview2.mp4" type="video/mp4">
+            <source src="vid/preview2.ogg" type="video/ogg">
+            <source src="vid/preview2.webm" type="video/webm">
+            Your browser does not support the video tag.
+    </video>
+    </div>
+    
+    <div id="territory">
+    <h1>Known Territory</h1>
+    			<div class="detail_container">
+				<!-- City -->
+				<div class="city_detail">
+					<h3>Select A Region</h3>
+					<p>Throughout the ages the Ninja way of life has taken root in various parts of the globe.  Use the map on the right to select different regions to discover known Ninja settlements.</p>
+				</div>
+			</div>
+
+    	<div class="map-container">
+        	<a class="mark" style="top:101px; left:110px; city="hi" continent="NA" "></a>
+            <a class="mark" style="top:130px; left:145px; area="2" continent="NA" "></a>
+            <a class="mark" style="top:159px; left:194px; area="3" continent="NA" "></a>
+            <a class="mark" style="top:111px; left:340px; area="4" continent="EU" "></a>
+            <a class="mark" style="top:90px; left:419px; area="5" continent="EU" "></a>
+            <a class="mark" style="top:119px; left:419px; area="6" continent="EU" "></a>
+            <a class="mark" style="top:100px; left:471px; area="7" continent="ME" "></a>
+            <a class="mark" style="top:139px; left:500px; area="8" continent="ME" "></a>
+            <a class="mark" style="top:159px; left:561px; area="9" continent="SA" "></a>                       
+            <a class="mark" style="top:135px; left:577px; area="10" continent="SA" "></a>
+            <a class="mark" style="top:124px; left:600px; area="11" continent="JA" "></a>
+            <a class="mark" style="top:114px; left:605px; area="12" continent="JA" "></a>
+            <a class="mark" style="top:97px; left:617px; area="13" continent="JA" "></a>
+            <a class="mark" style="top:159px; left:541px; area="14" continent="SA" "></a>                       
+            <a class="mark" style="top:135px; left:557px; area="15" continent="SA" "></a>
+            <a class="mark" style="top:124px; left:580px; area="16" continent="CH" "></a>
+            <a class="mark" style="top:100px; left:573px; area="17" continent="CH" "></a>
+            <a class="mark" style="top: 66px; left:579px; area="18" continent="RU" "></a>
+
+			<form id="mapForm" name="mapForm" class="form-continent" method="post" action="">
+				<select name="continent" id="continent">
+					<option value="ALL" selected="selected">Show all settlements</option>
+					<option value="RU">Russia</option>
+					<option value="NA">North America</option>
+					<option value="CH">China</option>
+                    <option value="EU">Europe</option>
+                    <option value="JA">Japan</option>
+                    <option value="ME">Middle East</option>
+					<option value="SA">South Asia</option>
+				</select>
+			</form>
+            
+
+        </div><!--map container -->
+    
+    </div>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
+ 
